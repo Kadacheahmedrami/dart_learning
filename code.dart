@@ -7,11 +7,6 @@ void main(){
 
 
 random_pass();
-//printphrase();
-//print_even_numbers();
-
-
-
 
 
 }
@@ -44,33 +39,3 @@ print("password:  $password");
 }
 
 
-// creating a custome print command with required paramater 
-void printphrase({required String? name,gender, required int? age,height  , String? country , bool parents_dead=false } ){
-if(parents_dead)
-{print("hello my name is $name i am $gender $age years old $height cm i live in ${country ?? "planet earth -_- "} i love my parents");}
-else
-{print("hello my name is $name i am $gender $age years old $height cm i live in ${country ?? "planet earth -_- "} i miss my parents");}
-
-}
-
-
-// printing even number between a and b
-void print_even_numbers ()
-
-{
-
-print("enter the first number");
-int a = int.parse(stdin.readLineSync()!);
-print("enter the second number");
-int b = int.parse(stdin.readLineSync()!);
-
-
-for (int i=a ; i <= b ; i++)
-{
-  if(i%2 == 0 )
-  {
-    print(i);
-  }
-
-}
-}
